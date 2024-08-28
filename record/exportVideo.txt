@@ -1,0 +1,1 @@
+ffmpeg -f rawvideo -pixel_format rgb24 -video_size 1200x800 -framerate 60 -i rgbRec.out -vf "vflip" -c:v libx264 -pix_fmt yuv420p output.mp4
